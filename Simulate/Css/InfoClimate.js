@@ -20,7 +20,7 @@ export const StylesInfoClimate = StyleSheet.create({
         alignItems: 'center',
         borderTopColor: '#fff',
         borderTopWidth: 1,
-        gap: 15,
+        gap: 30,
     },
     
     TextClima: {

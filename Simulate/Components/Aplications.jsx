@@ -7,8 +7,8 @@ export function Aplications(){
         <View style={StylesAplications.Container}>
             <View style={StylesAplications.ContainerAplication}>
                 <View style={StylesAplications.InfoAplication}>
-                    <Image style={StylesAplications.ImageAplication}/>
-                    <Text style={StylesAplications.TextAplication}>Aplicacion 1</Text>
+                    <Image style={StylesAplications.ImageAplication} source={require('../assets/Cof.png')}/>
+                    <Text style={StylesAplications.TextAplication}>Settings</Text>
                 </View>
             </View>
         </View>

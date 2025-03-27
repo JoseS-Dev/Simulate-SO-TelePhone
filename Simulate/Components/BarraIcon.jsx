@@ -2,30 +2,10 @@ import {View, Text, Image} from 'react-native';
 import { useEffect, useState } from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { StylesIcon } from '../Css/BarraIcon';
+import { useBattery } from '../Js/Battery';
 export function BarraIcon(){
     const insets = useSafeAreaInsets();
-    const [batteryLevel, setBatteryLevel] = useState(0);
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setBatteryLevel(100)
-        })
-        const decreaseBattery = setInterval(() => {
-            setBatteryLevel((dism) => {
-                if(dism > 0){
-
-                    return dism - 1
-                }
-                clearInterval(decreaseBattery)
-                return 0
-            })
-        }, 5000)
-        return () => {
-            clearTimeout(timer)
-            clearInterval(decreaseBattery)
-        }
-    }, []);
-
+    const[batteryLevel, setBatteryLevel, backgroundColor, setBackgroundColor] = useBattery();
     return (
         <View style={[StylesIcon.containerMain, {paddingTop: insets.top}]}>
             <View style={StylesIcon.ContainerGeneral}>
