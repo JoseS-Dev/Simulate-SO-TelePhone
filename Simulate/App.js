@@ -5,6 +5,7 @@ import { BarraIcon } from './Components/BarraIcon';
 import { HoursDate } from './Components/HoursDate';
 import { InfoClimate } from './Components/InfoClimate';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+
 export default function App() {
   return (
     <SafeAreaProvider>
