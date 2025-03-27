@@ -38,7 +38,11 @@ export function BarraIcon(){
                     {batteryLevel >= 50 ? (
                         <Image source={require('../assets/battery-full.png')} style = {StylesIcon.icon}/>
                     ) : batteryLevel >= 30 ? (
-                        
+                        <Image source={require('../assets/battery-medium.png') } style = {StylesIcon.icon}/>
+                    ) : batteryLevel >= 10 ? (
+                        <Image source={require('../assets/battery-low.png')} style = {StylesIcon.icon}/>
+                    ) : (
+                        <Image source={require('../assets/battery.png')} style = {StylesIcon.icon}/>
                     )}
                 </View>
             </View>

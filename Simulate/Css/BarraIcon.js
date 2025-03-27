@@ -2,8 +2,6 @@ import { StyleSheet } from "react-native";
 
 export const StylesIcon = StyleSheet.create({
     containerMain: {
-        borderColor: '#000',
-        borderWidth: 1,
         width: '100%',
         flexDirection: 'row',
         padding: 5,
@@ -16,6 +14,7 @@ export const StylesIcon = StyleSheet.create({
     ContainerSignal: {
         width: '70%',
         justifyContent: 'flex-start',
+        alignContent: 'center',
         paddingLeft: 5
     },
     textSignal: {
