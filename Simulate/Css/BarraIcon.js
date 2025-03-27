@@ -18,7 +18,7 @@ export const StylesIcon = StyleSheet.create({
         paddingLeft: 5
     },
     textSignal: {
-        fontSize: 20,
+        fontSize: 10,
         letterSpacing: 2,
         color: '#eee',
     },
@@ -30,13 +30,13 @@ export const StylesIcon = StyleSheet.create({
         alignContent: 'center',
     },
     textBattery: {
-        fontSize: 20,
+        fontSize: 10,
         letterSpacing: 2,
         color: '#eee',
     },
     icon: {
-        width: 27,
-        height: 27,
+        width: 15,
+        height: 15,
 
     }
 })

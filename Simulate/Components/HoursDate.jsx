@@ -3,29 +3,38 @@ import { useEffect, useState } from "react";
 import { StylesHoursDate } from "../Css/HoursDate";
 
 export function HoursDate(){
-    const [date, newDate] = useState(new Date());
+    const [date, setDate] = useState(new Date());
     const [hours, newHours] = useState(date.getHours());
     const [minutes, newMinutes] = useState(date.getMinutes());
+    
     useEffect(() => {
-        const timer = setInterval(() => {
-            newDate(new Date);
-        })
-        const HoursandMinutes = setInterval(() => {
-            if(date.getHours() !== hours || date.getMinutes() !== minutes){
-                newHours(date.getHours())
-                newMinutes(date.getMinutes())
+        
+        const UpdateClock = () => {
+            const newDate = new Date();
+            if(newDate.getHours() !== hours || newDate.getMinutes() !== minutes){
+                setDate(newDate);
+                newHours(newDate.getHours());
+                newMinutes(newDate.getMinutes());
             }
-        })
-        return () => {
-            clearInterval(timer)
-            clearInterval(HoursandMinutes)
+            setTimeout(UpdateClock, 1000);
         }
-    }, []);
+        UpdateClock();
+        return () => {
+            clearTimeout(UpdateClock);
+        }
+    }, [hours, minutes]);
+    const formattedHours = String(hours).padStart(2, '0');
+    const formattedMinutes = String(minutes).padStart(2, '0');
+    const formattedDate = date.toLocaleDateString('es-ES', { year: 'numeric', month: '2-digit', day: '2-digit' });
     
     return (
-        <View style={StylesHoursDate}>
-            <Text>{hours}:{minutes}</Text>
-            <Text>{date}</Text>
+        <View style={StylesHoursDate.Container}>
+            {hours >= 12 ? (
+                <Text style={StylesHoursDate.textHours_minutes}>{formattedHours} : {formattedMinutes} PM</Text>
+            ) : (
+                <Text style={StylesHoursDate.textHours_minutes}>{formattedHours} : {formattedMinutes} AM</Text>
+            )}
+            <Text style={StylesHoursDate.textDate}>{formattedDate}</Text>
         </View>
     )
 }
