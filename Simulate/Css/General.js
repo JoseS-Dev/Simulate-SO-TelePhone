@@ -1,0 +1,11 @@
+import { StyleSheet } from "react-native";
+export const StylesGeneral = StyleSheet.create({
+    Container: {
+        flex: 1,
+    },
+    ImagenBackground: {
+        height: '100%',
+        width: '100%',
+
+    }
+})
