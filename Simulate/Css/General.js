@@ -6,6 +6,12 @@ export const StylesGeneral = StyleSheet.create({
     ImagenBackground: {
         height: '100%',
         width: '100%',
-
+    },
+    ContainerAplications: {
+        borderColor: '#fff',
+        borderWidth: 1,
+        flexDirection: 'row',
+        width: '100%',
+        height: '45%',
     }
 })
