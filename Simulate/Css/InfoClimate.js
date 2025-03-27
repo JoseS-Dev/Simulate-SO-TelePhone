@@ -39,5 +39,11 @@ export const StylesInfoClimate = StyleSheet.create({
         letterSpacing: 2,
         fontWeight: '500',
         color: '#eee',
-    }
+    },
+    TextUbicacion: {
+        fontSize: 18,
+        letterSpacing: 2,
+        fontWeight: '500',
+        color: '#eee',
+    },
 })

@@ -8,6 +8,7 @@ export function InfoClimate(){
             <Text style={StylesInfoClimate.TextClima}>Clima</Text>
             <View style={StylesInfoClimate.ContainerSecondary}>
                 <Image style={StylesInfoClimate.ImageClima}/>
+                <Text style={StylesInfoClimate.TextUbicacion}>Dia</Text>
                 <Text style={StylesInfoClimate.TextTemperature}>28 C</Text>
             </View>
         </View>
