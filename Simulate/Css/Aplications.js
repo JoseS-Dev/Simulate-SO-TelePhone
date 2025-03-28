@@ -1,18 +1,19 @@
 import { StyleSheet } from "react-native";
 export const StylesAplications = StyleSheet.create({
     Container: {
-        borderWidth: 1,
-        borderColor: '#fff',
+        borderBottomColor: '#333',
+        borderBottomWidth: 1,
         width: '55%',
+        height: '95%',
         padding: 10
     },
     ContainerAplication: {
-        borderColor: '#fff',
-        borderWidth: 1,
         width: '100%',
         height: '100%',
         justifyContent: 'space-evenly',
         flexDirection: 'row',
+        flexWrap: 'wrap',
+        gap: 5
     },
     InfoAplication: {
         width: '45%',
@@ -28,7 +29,7 @@ export const StylesAplications = StyleSheet.create({
         padding: 5,
         height: '60%',
         width: '70%',
-        borderRadius: 50,
+        borderRadius: 10,
         backgroundColor: '#111'
 
     },

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-export function HoursDate(){
+export function useHoursDate(){
     const [date, setDate] = useState(new Date());
         const [hours, newHours] = useState(date.getHours());
         const [minutes, newMinutes] = useState(date.getMinutes());

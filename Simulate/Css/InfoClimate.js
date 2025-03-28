@@ -4,7 +4,7 @@ export const StylesInfoClimate = StyleSheet.create({
     container: {
         width: '45%',
         height: '95%',
-        padding: 5,
+        padding: 3,
         alignItems: 'center',
         borderRightColor: '#333',
         borderRightWidth: 1,
@@ -15,7 +15,7 @@ export const StylesInfoClimate = StyleSheet.create({
     ContainerSecondary: {
         width: '90%',
         height: '80%',
-        padding: 5,
+        padding: 10,
         justifyContent: 'space-between',
         alignItems: 'center',
         borderTopColor: '#fff',
@@ -32,7 +32,7 @@ export const StylesInfoClimate = StyleSheet.create({
     
     ImageClima: {
         width: '100%',
-        height: '80%',
+        height: '85%',
     },
     ContainerInfoTemperature: {
         borderColor: '#fff',
