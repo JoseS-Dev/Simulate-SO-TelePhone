@@ -11,5 +11,10 @@ export const StylesGeneral = StyleSheet.create({
         flexDirection: 'row',
         width: '100%',
         height: '45%',
+    },
+    ContainerAplications_2: {
+        
+        width: '100%',
+        height: '25%',
     }
 })

@@ -3,7 +3,7 @@ export const StylesInfoClimate = StyleSheet.create({
     // Estilos para el contenedor del clima
     container: {
         width: '45%',
-        height: '95%',
+        height: '100%',
         padding: 3,
         alignItems: 'center',
         borderRightColor: '#333',

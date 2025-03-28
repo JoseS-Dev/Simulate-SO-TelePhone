@@ -4,7 +4,7 @@ export const StylesAplications = StyleSheet.create({
         borderBottomColor: '#333',
         borderBottomWidth: 1,
         width: '55%',
-        height: '95%',
+        height: '100%',
         padding: 10
     },
     ContainerAplication: {
@@ -13,7 +13,7 @@ export const StylesAplications = StyleSheet.create({
         justifyContent: 'space-evenly',
         flexDirection: 'row',
         flexWrap: 'wrap',
-        gap: 15
+        gap: 5
     },
     InfoAplication: {
         width: '45%',

@@ -3,8 +3,9 @@ import {View, ImageBackground } from 'react-native';
 import { StylesGeneral } from './Css/General';
 import { BarraIcon } from './Components/BarraIcon';
 import { HoursDate } from './Components/HoursDate';
-import { Aplications } from './Components/AplicationsRight';
-import { InfoClimate } from './Components/InfoClimate'
+import { AplicationsRight } from './Components/AplicationsRight';
+import { InfoClimate } from './Components/InfoClimate';
+import { AplicationsBottom } from './Components/AplicationsBottom';
 import { useBattery } from './Js/Battery';
 
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -20,7 +21,10 @@ export default function App() {
           <HoursDate/>
           <View style={StylesGeneral.ContainerAplications}>
             <InfoClimate/>
-            <Aplications/>
+            <AplicationsRight/>
+          </View>
+          <View style={StylesGeneral.ContainerAplications_2}>
+            <AplicationsBottom/>
           </View>
         </ImageBackground>
       </View>
