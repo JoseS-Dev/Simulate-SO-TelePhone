@@ -1,5 +1,4 @@
 import { View, Text } from "react-native";
-import { useEffect, useState } from "react";
 import { StylesHoursDate } from "../Css/HoursDate";
 import { HoursDate } from "../Js/HoursDate";
 

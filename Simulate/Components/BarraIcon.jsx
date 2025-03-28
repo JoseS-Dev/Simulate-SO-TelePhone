@@ -13,16 +13,16 @@ export function BarraIcon(){
                     <Text style={StylesIcon.textSignal}>Movistar</Text>
                 </View>
                 <View style={StylesIcon.ContainerRed}>
-                    <Image source={require('../assets/wifi.png')} style = {StylesIcon.icon}/>
+                    <Image source={require('../assets/Icon/wifi.png')} style = {StylesIcon.icon}/>
                     <Text style={StylesIcon.textBattery} id='batery'>{batteryLevel}%</Text>
                     {batteryLevel >= 50 ? (
-                        <Image source={require('../assets/battery-full.png')} style = {StylesIcon.icon}/>
+                        <Image source={require('../assets/Battery/battery-full.png')} style = {StylesIcon.icon}/>
                     ) : batteryLevel >= 30 ? (
-                        <Image source={require('../assets/battery-medium.png') } style = {StylesIcon.icon}/>
+                        <Image source={require('../assets/Battery/battery-medium.png') } style = {StylesIcon.icon}/>
                     ) : batteryLevel >= 10 ? (
-                        <Image source={require('../assets/battery-low.png')} style = {StylesIcon.icon}/>
+                        <Image source={require('../assets/Battery/battery-low.png')} style = {StylesIcon.icon}/>
                     ) : (
-                        <Image source={require('../assets/battery.png')} style = {StylesIcon.icon}/>
+                        <Image source={require('../assets/Battery/battery.png')} style = {StylesIcon.icon}/>
                     )}
                 </View>
             </View>

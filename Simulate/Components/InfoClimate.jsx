@@ -11,7 +11,7 @@ export function InfoClimate(){
         })
         console.log(climate)
     }, [])
-    console.log(climate.Icon)
+    
     return (
         <View style={StylesInfoClimate.container}>
             <Text style={StylesInfoClimate.TextClima}>Clima</Text>

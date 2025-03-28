@@ -10,6 +10,10 @@ export function Aplications(){
                     <Image style={StylesAplications.ImageAplication} source={require('../assets/Cof.png')}/>
                     <Text style={StylesAplications.TextAplication}>Settings</Text>
                 </View>
+                <View style={StylesAplications.InfoAplication}>
+                    <Image style={StylesAplications.ImageAplication} source={require('../assets/Cof.png')}/>
+                    <Text style={StylesAplications.TextAplication}>Settings</Text>
+                </View>
             </View>
         </View>
     )
