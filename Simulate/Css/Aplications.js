@@ -13,7 +13,7 @@ export const StylesAplications = StyleSheet.create({
         justifyContent: 'space-evenly',
         flexDirection: 'row',
         flexWrap: 'wrap',
-        gap: 5
+        gap: 15
     },
     InfoAplication: {
         width: '45%',

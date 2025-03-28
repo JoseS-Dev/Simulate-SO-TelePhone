@@ -3,7 +3,7 @@ import {View, ImageBackground } from 'react-native';
 import { StylesGeneral } from './Css/General';
 import { BarraIcon } from './Components/BarraIcon';
 import { HoursDate } from './Components/HoursDate';
-import { Aplications } from './Components/Aplications';
+import { Aplications } from './Components/AplicationsRight';
 import { InfoClimate } from './Components/InfoClimate'
 import { useBattery } from './Js/Battery';
 
