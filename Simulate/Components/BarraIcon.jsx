@@ -14,7 +14,7 @@ export function BarraIcon(){
                 </View>
                 <View style={StylesIcon.ContainerRed}>
                     <Image source={require('../assets/Icon/wifi.png')} style = {StylesIcon.icon}/>
-                    <Text style={StylesIcon.textBattery} id='batery'>{batteryLevel}%</Text>
+                    <Text style={StylesIcon.textBattery}>{batteryLevel}%</Text>
                     {batteryLevel >= 50 ? (
                         <Image source={require('../assets/Battery/battery-full.png')} style = {StylesIcon.icon}/>
                     ) : batteryLevel >= 30 ? (
