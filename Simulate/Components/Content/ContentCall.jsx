@@ -1,5 +1,5 @@
 import {View, Text} from 'react-native';
-import { StylesCall } from '../Css/Call';
+import { StylesCall } from '../../Css/Call';
 
 export function ContentCall(){
     return(

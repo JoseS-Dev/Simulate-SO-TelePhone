@@ -1,5 +1,5 @@
 import {View, Text} from 'react-native';
-import { StylesNotes } from '../Css/Notes';
+import { StylesNotes } from '../../Css/Notes';
 
 export function ContentNotes(){
     return(

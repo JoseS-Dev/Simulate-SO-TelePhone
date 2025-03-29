@@ -1,5 +1,5 @@
 import {View, Text } from "react-native";
-import { stylesCalculate } from "../Css/Calculate";
+import { stylesCalculate } from "../../Css/Calculate";
 
 export function ContentCalculate(){
     return(

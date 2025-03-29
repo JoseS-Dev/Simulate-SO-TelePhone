@@ -1,5 +1,5 @@
 import {View, Text} from 'react-native';
-import { StylesMaps } from '../Css/Maps';
+import { StylesMaps } from '../../Css/Maps';
 
 export function ContentMaps(){
     return(

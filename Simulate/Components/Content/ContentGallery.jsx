@@ -1,5 +1,5 @@
 import { View, Text } from "react-native";
-import { StylesGallery } from "../Css/Gallery";
+import { StylesGallery } from "../../Css/Gallery";
 
 export function ContentGallery(){
     return(

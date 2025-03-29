@@ -30,7 +30,7 @@ export function ContentAplication(){
                 </Link>
             </View>
             <View style={StylesAplications.InfoAplication}>
-                <Link href="/Call">
+                <Link href="/Call" asChild>
                     <Pressable style={StylesAplications.Pressable}>
                         <Image style={StylesAplications.ImageAplication} source={require('../../assets/Phone/Phone.png')}/>
                         <Text style={StylesAplications.TextAplication}>Llamada</Text>

@@ -1,10 +1,10 @@
 import { View, Text } from "react-native";
-import { StylesCamera } from "../Css/Camera";
+import { stylesCamera } from "../../Css/Camera";
 
 export function ContentCamera(){
     return(
-        <View style={StylesCamera.ContainerCamera}>
-            <Text style={StylesCamera.TextCamera}>Cámara</Text>
+        <View style={stylesCamera.ContainerCamera}>
+            <Text style={stylesCamera.TextCamera}>Cámara</Text>
         </View>
     )
 }

@@ -1,5 +1,5 @@
 import { View, Text } from "react-native";
-import { StylesMessage } from "../Css/Message";
+import { StylesMessage } from "../../Css/Message";
 
 export function ContentMessage(){
     return(

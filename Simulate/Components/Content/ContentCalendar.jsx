@@ -1,5 +1,5 @@
 import { View, Text } from "react-native";
-import { StylesCalendar } from "../Css/Calendar";
+import { StylesCalendar } from "../../Css/Calendar";
 
 export function ContentCalendar(){
     return(

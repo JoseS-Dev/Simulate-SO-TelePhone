@@ -1,5 +1,5 @@
 import { View, Text } from "react-native";
-import { StylesGmail } from "../Css/Gmail";
+import { StylesGmail } from "../../Css/Gmail";
 
 export function ContentGmail(){
     return(
