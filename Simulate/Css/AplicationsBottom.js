@@ -17,9 +17,19 @@ export const StylesAplicationsBottom = StyleSheet.create({
         flexWrap: 'wrap',
         gap: 10,
     },
+    Pressable: {
+        borderColor: '#fff',
+        borderWidth: 1,
+        width: '100%',
+        height: '100%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: 5,
+        
+    },
     InfoAplication: {
         width: '45%',
-        height: '45%',
+        height: '50%',
         justifyContent: 'center',
         alignItems: 'center',
         gap: 5,

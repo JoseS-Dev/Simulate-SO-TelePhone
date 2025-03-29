@@ -1,32 +1,57 @@
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image, Pressable} from 'react-native';
 import { StylesAplications } from '../../Css/Aplications';
+import { Link } from 'expo-router';
 
 export function ContentAplication(){
     return(
         <View style={StylesAplications.ContainerAplication}>
             <View style={StylesAplications.InfoAplication}>
-                <Image style={StylesAplications.ImageAplication} source={require('../../assets/Settings/Cof.png')}/>
-                <Text style={StylesAplications.TextAplication}>Settings</Text>
+                <Link href="/Settings" asChild>
+                    <Pressable style={StylesAplications.Pressable}>
+                        <Image style={StylesAplications.ImageAplication} source={require('../../assets/Settings/Cof.png')}/>
+                        <Text style={StylesAplications.TextAplication}>Settings</Text>
+                    </Pressable>
+                </Link>
             </View>
             <View style={StylesAplications.InfoAplication}>
-                <Image style={StylesAplications.ImageAplication} source={require('../../assets/Calculate/Calculate.png')}/>
-                <Text style={StylesAplications.TextAplication}>Calculadora</Text>
+                <Link href="/Calculate" asChild>
+                    <Pressable style={StylesAplications.Pressable}>
+                    <Image style={StylesAplications.ImageAplication} source={require('../../assets/Calculate/Calculate.png')}/>
+                    <Text style={StylesAplications.TextAplication}>Calculadora</Text>
+                    </Pressable>
+                </Link>
             </View>
             <View style={StylesAplications.InfoAplication}>
-                <Image style={StylesAplications.ImageAplication} source={require('../../assets/Calendar/Calendar.png')}/>
-                <Text style={StylesAplications.TextAplication}>Calendario</Text>
+                <Link href="/Calendar" asChild>
+                    <Pressable style={StylesAplications.Pressable}>
+                        <Image style={StylesAplications.ImageAplication} source={require('../../assets/Calendar/Calendar.png')}/>
+                        <Text style={StylesAplications.TextAplication}>Calendario</Text>
+                    </Pressable>
+                </Link>
             </View>
             <View style={StylesAplications.InfoAplication}>
-                <Image style={StylesAplications.ImageAplication} source={require('../../assets/Phone/Phone.png')}/>
-                <Text style={StylesAplications.TextAplication}>Llamada</Text>
+                <Link href="/Call">
+                    <Pressable style={StylesAplications.Pressable}>
+                        <Image style={StylesAplications.ImageAplication} source={require('../../assets/Phone/Phone.png')}/>
+                        <Text style={StylesAplications.TextAplication}>Llamada</Text>
+                    </Pressable>
+                </Link>
             </View>
             <View style={StylesAplications.InfoAplication}>
-                <Image style={StylesAplications.ImageAplication} source={require('../../assets/Camera/Camera.png')}/>
-                <Text style={StylesAplications.TextAplication}>Camara</Text>
+                <Link href="/Camera" asChild>
+                    <Pressable style={StylesAplications.Pressable}>
+                        <Image style={StylesAplications.ImageAplication} source={require('../../assets/Camera/Camera.png')}/>
+                        <Text style={StylesAplications.TextAplication}>Camara</Text>
+                    </Pressable>
+                </Link>
             </View>
             <View style={StylesAplications.InfoAplication}>
-                <Image style={StylesAplications.ImageAplication} source={require('../../assets/Message/Message.png')}/>
-                <Text style={StylesAplications.TextAplication}>Mensajes</Text>
+                <Link href='/Message' asChild>
+                    <Pressable style={StylesAplications.Pressable}>
+                        <Image style={StylesAplications.ImageAplication} source={require('../../assets/Message/Message.png')}/>
+                        <Text style={StylesAplications.TextAplication}>Mensajes</Text>
+                    </Pressable>
+                </Link>
             </View>
         </View>
     )

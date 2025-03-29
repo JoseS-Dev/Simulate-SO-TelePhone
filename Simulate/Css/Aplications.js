@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { Pressable, StyleSheet } from "react-native";
 export const StylesAplications = StyleSheet.create({
     Container: {
         borderBottomColor: '#333',
@@ -6,6 +6,16 @@ export const StylesAplications = StyleSheet.create({
         width: '55%',
         height: '100%',
         padding: 10
+    },
+    Pressable: {
+        borderColor: '#fff',
+        borderWidth: 1,
+        width: '100%',
+        height: '95%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: 5,
+        
     },
     ContainerAplication: {
         width: '100%',
