@@ -7,7 +7,6 @@ import { AplicationsRight } from './Components/AplicationsRight';
 import { InfoClimate } from './Components/InfoClimate';
 import { AplicationsBottom } from './Components/AplicationsBottom';
 import { useBattery } from './Js/Battery';
-
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 export default function App() {

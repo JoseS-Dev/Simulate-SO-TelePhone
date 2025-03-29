@@ -18,8 +18,7 @@ export const StylesAplicationsBottom = StyleSheet.create({
         gap: 10,
     },
     Pressable: {
-        borderColor: '#fff',
-        borderWidth: 1,
+        
         width: '100%',
         height: '100%',
         justifyContent: 'center',

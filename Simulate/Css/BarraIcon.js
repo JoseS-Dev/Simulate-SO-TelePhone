@@ -5,6 +5,7 @@ export const StylesIcon = StyleSheet.create({
         width: '100%',
         flexDirection: 'row',
         padding: 5,
+        backgroundColor: '#000'
     },
     ContainerGeneral: {
         width: '100%',

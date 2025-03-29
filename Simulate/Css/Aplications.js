@@ -8,8 +8,6 @@ export const StylesAplications = StyleSheet.create({
         padding: 10
     },
     Pressable: {
-        borderColor: '#fff',
-        borderWidth: 1,
         width: '100%',
         height: '95%',
         justifyContent: 'center',
