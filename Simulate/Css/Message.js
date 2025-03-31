@@ -4,38 +4,39 @@ export const StylesMessage = StyleSheet.create({
         flex: 1,
         backgroundColor: '#111',
         width: '100%',
-        borderColor: '#fff',
-        borderWidth: 1,
+        padding: 5,
         height: '90%'
     },
     ContainerMain: {
-        borderColor: '#fff',
-        borderWidth: 1,
         width: '100%',
         height: '100%',
         alignItems: 'center',
     },
     ContainerTitle: {
-        borderColor: '#fff',
+        borderBottomColor: '#aaa',
         borderWidth: 1,
         width: '100%',
-        alignItems: 'flex-start',
-        padding: 10,
-        height: 'auto'
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: 5,
+        height: 'auto',
+        flexDirection: 'row'
+    },
+    ImageMessage: {
+        width: 45,
+        height: 45,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     textTitle: {
         fontSize: 20,
         letterSpacing: 2,
         color: '#eee',
         fontWeight: '500',
+        paddingLeft: 5,
     },
-    ContainerMess: {
-
-        borderColor: '#fff',
-        borderWidth: 1,
+    ContainerStructureMessage: {
         width: '100%',
-        height: '95%',
-        padding: 4
-    },
-    
+        height: 'auto',
+    }
 })
