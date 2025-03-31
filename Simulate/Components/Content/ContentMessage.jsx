@@ -1,5 +1,6 @@
-import { View, Text, FlatList } from "react-native";
+import { View, Text } from "react-native";
 import { StylesMessage } from "../../Css/Message";
+
 
 export function ContentMessage(){
     return(
@@ -8,10 +9,8 @@ export function ContentMessage(){
                 <View style={StylesMessage.ContainerTitle}>
                     <Text style={StylesMessage.textTitle}>Mensajes</Text>
                 </View>
-                <View style={StylesMessage.ContainerMess}>
-                    <FlatList
-                        
-                    />
+                <View>
+                    
                 </View>
             </View>
         </View>

@@ -30,10 +30,12 @@ export const StylesMessage = StyleSheet.create({
         fontWeight: '500',
     },
     ContainerMess: {
+
         borderColor: '#fff',
         borderWidth: 1,
         width: '100%',
         height: '95%',
         padding: 4
-    }
+    },
+    
 })
