@@ -33,6 +33,10 @@ export function ContentMessage(){
                         keyExtractor={(item) => item.id.toString()}
                         showsVerticalScrollIndicator={false}
                     />
+                ) : messages.length === 0 ? (
+                    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+                        <Text style={{color: '#fff'}}>No hay mensajes</Text>
+                    </View>
                 ) : (
                     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
                         <ActivityIndicator size="large" color="#fff" />
