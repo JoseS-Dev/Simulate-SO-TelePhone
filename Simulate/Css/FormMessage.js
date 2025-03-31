@@ -33,6 +33,7 @@ export const stylesFormMessage = StyleSheet.create({
         borderBottomColor: '#aaa',
         borderWidth: 1,
         padding: 10,
+        gap: 10,
     },
     ContainerContentMessage: {
         borderColor: '#ddaa',
@@ -48,13 +49,18 @@ export const stylesFormMessage = StyleSheet.create({
         color: '#eee',
         fontWeight: '500'
     },
+    ContainerContentUser: {
+        width: '100%',
+        height: 'auto',
+        padding: 5,
+        justifyContent: 'flex-end',
+        alignItems: 'flex-end',
+        gap: 5,
+    },
     ContainerInput: {
         width: '100%',
         height: 80,
-        
         justifyContent: 'space-between',
-        
-        
         flexDirection: 'row',
     },
     textInput: {
