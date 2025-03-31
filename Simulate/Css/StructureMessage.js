@@ -12,10 +12,13 @@ export const StylesStructureMessage = StyleSheet.create({
         marginBottom: 3, 
     },
     container: {
-        width: '90%',
+        width: '95%',
+        height: '100%',
         paddingLeft: 5,
+        flexDirection: 'column',
         alignContent: 'center',
         justifyContent: 'center',
+        
     },
     textContainer: {
         fontSize: 18,
@@ -29,7 +32,7 @@ export const StylesStructureMessage = StyleSheet.create({
         maxWidth: '80%',
     },
     Pressable: {
-        width: '10%',
+        
         paddingRight: 5,
         justifyContent: 'center',
         alignItems: 'center',
