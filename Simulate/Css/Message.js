@@ -1,13 +1,39 @@
 import { StyleSheet } from "react-native";
 export const StylesMessage = StyleSheet.create({
-    ContainerMessage:{
+    containerMessage: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#E0E0E0'
+        backgroundColor: '#111',
+        width: '100%',
+        borderColor: '#fff',
+        borderWidth: 1,
+        height: '90%'
     },
-    TextMessage:{
+    ContainerMain: {
+        borderColor: '#fff',
+        borderWidth: 1,
+        width: '100%',
+        height: '100%',
+        alignItems: 'center',
+    },
+    ContainerTitle: {
+        borderColor: '#fff',
+        borderWidth: 1,
+        width: '100%',
+        alignItems: 'flex-start',
+        padding: 10,
+        height: 'auto'
+    },
+    textTitle: {
         fontSize: 20,
-        color: '#000000'
+        letterSpacing: 2,
+        color: '#eee',
+        fontWeight: '500',
+    },
+    ContainerMess: {
+        borderColor: '#fff',
+        borderWidth: 1,
+        width: '100%',
+        height: '95%',
+        padding: 4
     }
 })
