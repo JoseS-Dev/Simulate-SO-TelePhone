@@ -7,6 +7,14 @@ export const StylesCall = StyleSheet.create({
         borderColor: '#fff',
         borderWidth: 1,
     },
+    ContainerMain: {
+        borderColor: '#fff',
+        borderWidth: 1,
+        width: '100%',
+        height: '100%',
+        alignItems: 'center',
+
+    },
     ContainerCallHeader: {
         borderColor: '#fff',
         borderWidth: 1,
@@ -47,26 +55,17 @@ export const StylesCall = StyleSheet.create({
         textDecorationLine: 'underline',
         color:'#ddaa11',
     },
-    ContainerCallBody: {
-        borderColor: '#fff',
-        borderWidth: 1,
-        width: '100%',
-        height: '89%',
-        alignItems: 'center',
-        padding: 3
-    },
     ContentCall: {
-        borderColor: '#fff',
-        borderWidth: 1,
         width: '100%',
-        height: '10%',
+        height: 70,
         flexDirection: 'row',
-        alignItems: 'center',
-        
+        borderRadius: 15,
+        backgroundColor: '#333',
+        marginBottom: 2        
     },
     ContainerName: {
-        borderColor: '#fff',
-        borderWidth: 1,
+        borderRightColor: '#aaa',
+        borderRightWidth: 1,
         width: '80%',
         height: '100%',
         justifyContent: 'center',
@@ -80,8 +79,7 @@ export const StylesCall = StyleSheet.create({
         fontWeight: '500'
     },
     PressableCall: {
-        borderColor: '#fff',
-        borderWidth: 1,
+        
         width: '20%',
         height: '100%',
         justifyContent: 'center',
@@ -89,13 +87,13 @@ export const StylesCall = StyleSheet.create({
     },
     ContainerCallImage: {
         borderRadius: 50,
-        borderColor: '#fff',
-        borderWidth: 1,
+        
         width: '65%',
         height: '75%',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#272'
+        backgroundColor: '#272',
+        boxShadow: '0 0 5px #ddaa'
     },
     ImageCall: {
         width: '80%',

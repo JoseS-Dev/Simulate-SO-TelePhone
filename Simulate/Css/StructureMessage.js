@@ -1,4 +1,4 @@
-import { Pressable, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 export const StylesStructureMessage = StyleSheet.create({
     containerMessage: {
         flexDirection: 'row',

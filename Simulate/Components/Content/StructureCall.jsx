@@ -6,7 +6,7 @@ export function StructureCallBody({Call}){
         <View style={StylesCall.ContentCall}>
             <View style={StylesCall.ContainerName}>
                 <Text style={StylesCall.TextName}>{Call.name}</Text>
-                <Text style={StylesCall.TextCall}>{Call.Phone}</Text>
+                <Text style={StylesCall.TextCall}>{Call.phone}</Text>
             </View>
             <Pressable style={StylesCall.PressableCall}>
                 <View style={StylesCall.ContainerCallImage}>
