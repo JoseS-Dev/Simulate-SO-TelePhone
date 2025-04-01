@@ -85,7 +85,6 @@ export const StylesCall = StyleSheet.create({
         fontWeight: '500'
     },
     PressableCall: {
-        
         width: '20%',
         height: '100%',
         justifyContent: 'center',
@@ -166,6 +165,32 @@ export const StylesCall = StyleSheet.create({
         boxShadow: '0 0 10px #ddaa',
         justifyContent: 'center',
         alignItems: 'center',
+    },
+    ContainerContacts: {
+        borderRightColor: '#aaa',
+        borderRightWidth: 1,
+        width: '60%',
+        height: '100%',
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        paddingLeft: 8
+    },
+    ContainerPressable: {
+        
+        width: '40%',
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
+        gap: 2,
+        flexDirection: 'row',
+    },
+    PressableContact: {
+        width: '30%',
+        height: '55%',
+        borderRadius: 100,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#262',
+        boxShadow: '0 0 10px #ddaa',
     },
     
 })
