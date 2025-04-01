@@ -60,7 +60,7 @@ export const StylesCall = StyleSheet.create({
         height: 70,
         flexDirection: 'row',
         borderRadius: 15,
-        backgroundColor: '#333',
+        backgroundColor: '#222',
         marginBottom: 2        
     },
     ContainerName: {
@@ -71,6 +71,12 @@ export const StylesCall = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'flex-start',
         paddingLeft: 8
+    },
+    ContainerLoading: {
+        width: '100%',
+        height: '100%',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     TextName: {
         color: '#eee',

@@ -3,6 +3,7 @@ import { StylesCall } from '../../Css/Call';
 import { useState, useEffect } from 'react';
 import { StructureCallBody } from './StructureCall';
 import { getCall } from '../../Js/UserCall';
+import { Link } from 'expo-router'
 
 
 export function ContentCall(){
@@ -25,16 +26,23 @@ export function ContentCall(){
                 <Image source={require('../../assets/Phone/Phone.png')} style={StylesCall.ImageHeader}/>
             </View>
             <View style={StylesCall.ContainerNavCall}>
-                <Text style={StylesCall.TextCall}>Teclado</Text>
+                <Link href='/KeyBoardCall' style={StylesCall.TextCall}>Teclado</Link>
                 <Text style={[StylesCall.TextCall, StylesCall.Link]}>Recientes</Text>
-                <Text style={StylesCall.TextCall}>Contactos</Text>
+                <Link href='/Contacts' style={StylesCall.TextCall}>Contactos</Link>
             </View>
-            <FlatList 
-                keyExtractor={(item) => item.id}
-                data={ListCell}
-                renderItem={({item}) => <StructureCallBody Call={item}/>}
-                showsVerticalScrollIndicator={false}
-            />
+             {ListCell.length === 0 ? (
+                <View style={StylesCall.ContainerLoading}>
+                    <ActivityIndicator size="large" color="#eee" />
+                    <Text style={StylesCall.TextName}>Cargando...</Text>
+                </View>
+             ) : (
+                <FlatList 
+                    keyExtractor={(item) => item.id}
+                    data={ListCell}
+                    renderItem={({item}) => <StructureCallBody Call={item}/>}
+                    showsVerticalScrollIndicator={false}
+                />
+             )}
             </View>
         </View>
     )
