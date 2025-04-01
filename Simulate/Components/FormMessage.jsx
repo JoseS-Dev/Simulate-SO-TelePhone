@@ -22,7 +22,7 @@ export function FormMessage(){
             }
         }
         loadMessages();
-    },[depndenciasID]);
+    },[dependenciasID]);
 
     const handleSendMessage = async () => {
         if(InputMessage.trim() !== ''){
