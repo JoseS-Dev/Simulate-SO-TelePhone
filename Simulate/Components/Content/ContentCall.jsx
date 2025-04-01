@@ -16,8 +16,6 @@ export function ContentCall(){
             console.log(`Hubo un error al cargar los datos: ${err}`);
         })
     }, [])
-    console.log(ListCell)
-    
     return(
         <View style={StylesCall.ContainerCall}>
             <View style={StylesCall.ContainerMain}>

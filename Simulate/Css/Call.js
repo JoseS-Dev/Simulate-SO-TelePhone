@@ -93,7 +93,6 @@ export const StylesCall = StyleSheet.create({
     },
     ContainerCallImage: {
         borderRadius: 50,
-        
         width: '65%',
         height: '75%',
         justifyContent: 'center',
@@ -106,4 +105,67 @@ export const StylesCall = StyleSheet.create({
         height: '80%',
         resizeMode: 'contain'
     },
+    ContainerKey: {
+        height: '89%',
+        width: '100%',
+        alignItems: 'center',
+        padding: 20,
+        gap: 3
+    },
+    ContainerResult: {
+        width: '100%',
+        height: '8%',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    TextResult: {
+        color: '#eee',
+        fontSize: 25,
+        letterSpacing: 1,
+        fontWeight: '500',
+        textAlign: 'center',
+    },
+    ContainerRow: {
+        width: '100%',
+        height: '19%',
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
+        padding: 5
+    },
+    ContainerKeyNumber: {
+        width: '25%',
+        height: '75%',
+        borderRadius: 100,
+        backgroundColor: '#222',
+        boxShadow: '0 0 10px #ddaa',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    TextKey: {
+        color: '#eee',
+        fontSize: 30,
+        letterSpacing: 1,
+        fontWeight: '500',
+        textAlign: 'center',
+        textAlignVertical: 'center',
+    },
+    ContainerKeyCall: {
+        height: '14%',
+        width: '100%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'row',
+        gap: 55
+    },
+    container_1: {
+        width: 75,
+        height: '80%',
+        borderRadius: 100,
+        backgroundColor: '#062',
+        boxShadow: '0 0 10px #ddaa',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    
 })
