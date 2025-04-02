@@ -1,4 +1,4 @@
-import { Pressable, StyleSheet } from "react-native";
+import { StyleSheet, TextInput } from "react-native";
 export const StylesNotes = StyleSheet.create({
     Container: {
         flex: 1,
@@ -106,12 +106,89 @@ export const StylesNotes = StyleSheet.create({
         width: '75%',
         height: '65%',
         backgroundColor: '#111',
-        borderColor: '#fff',
-        borderWidth: 1,
         position: 'absolute',
         top: '17%',
         left: '13%',
         zIndex: 1,
-    }
+        padding: 5,
+    },
+    ModalContainer: {
+        borderRadius: 30,
+        width: '100%',
+        height: '100%',
+        alignItems: 'center',
+        gap: 25,
+        boxShadow: '0px 0px 5px #ddaa',
+    },
+    ModalTitle: {
+        borderBottomColor: '#fff',
+        borderBottomWidth: 1,
+        width: '100%',
+        height: '7%',
+        color: '#eee',
+        fontSize: 15,
+        fontWeight: '500',
+        letterSpacing: 1,
+        textAlign: 'center',
+        padding: 5
+    },
+    ModalContent:{
+        width: '100%',
+        height: '25%',
+        padding: 5,
+        justifyContent: 'space-between',
+        alignItems: 'center',
 
+    },
+    TextInput: {
+        fontSize: 16,
+        fontWeight: '500',
+        color: '#eee',
+        letterSpacing: 1,
+        textAlign: 'left',
+    },
+    InputText: {
+        borderBottomColor: '#fff',
+        borderBottomWidth: 1,
+        borderRightColor: '#fff',
+        borderRightWidth: 1,
+        width: '100%',
+        height: '70%',
+        fontSize: 12,
+        fontWeight: '500',
+        color: '#eee',
+        letterSpacing: 1,
+        padding: 10,
+        borderRadius: 10
+    },
+    ModalContent_2: {
+        width: '100%',
+        height: '35%',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        padding: 5
+    },
+    TextArea: {
+        borderBottomColor: '#fff',
+        borderBottomWidth: 1,
+        borderRightColor: '#fff',
+        borderRightWidth: 1,
+        width: '100%',
+        height: '70%',
+        fontSize: 12,
+        fontWeight: '500',
+        color: '#eee',
+        letterSpacing: 1,
+        padding: 10,
+        borderRadius: 10
+    },
+    ModalButton: {
+        boxShadow: '0px 0px 10px #ddaa',
+        width: '55%',
+        height: '10%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#444',
+        borderRadius: 25,
+    }
 })

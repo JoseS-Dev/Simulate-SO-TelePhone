@@ -24,22 +24,28 @@ export function ContentNotes(){
                 animationType='slide'    
             >
                 <View style={StylesNotes.Modal}>
-                    <View>
-                        <Text>Crear Nota</Text>
-                        <View>
-                            <Text>Nombre de la nota</Text>
+                    <View style={StylesNotes.ModalContainer}>
+                        <Text style={StylesNotes.ModalTitle}>Crear Nota</Text>
+                        <View style={StylesNotes.ModalContent}>
+                            <Text style={StylesNotes.TextInput}>Nombre de la nota</Text>
                             <TextInput
-                                placeholder='Nombre de la nota'
+                                placeholder='Nota'
+                                placeholderTextColor={'#fff'}
+                                style={StylesNotes.InputText}
                             />
                         </View>
-                        <View>
-                            <Text>Contenido de la nota</Text>
+                        <View style={StylesNotes.ModalContent_2}>
+                            <Text style={StylesNotes.TextInput}>Contenido de la nota</Text>
                             <TextInput
-                                placeholder='Contenido de la nota'
+                                placeholder='Contenido'
+                                placeholderTextColor={'#fff'}
+                                style={StylesNotes.TextArea}
+                                multiline={true}
+                                numberOfLines={4}
                             />
                         </View>
-                        <TouchableHighlight>
-                            <Text>Agregar Nota</Text>
+                        <TouchableHighlight style={StylesNotes.ModalButton} onPress={() => setModalVisible(false)}>
+                            <Text style={StylesNotes.textNotes}>Agregar Nota</Text>
                         </TouchableHighlight>
                     </View>
                 </View>
