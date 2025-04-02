@@ -4,20 +4,17 @@ export const StylesCall = StyleSheet.create({
         flex: 1,
         backgroundColor: '#111',
         alignItems: 'center',
-        borderColor: '#fff',
-        borderWidth: 1,
+        
     },
     ContainerMain: {
-        borderColor: '#fff',
-        borderWidth: 1,
+        
         width: '100%',
         height: '100%',
         alignItems: 'center',
 
     },
     ContainerCallHeader: {
-        borderColor: '#fff',
-        borderWidth: 1,
+        
         flexDirection: 'row',
         width: '100%',
         alignItems: 'center',
@@ -33,11 +30,14 @@ export const StylesCall = StyleSheet.create({
     },
     ImageHeader: {
         width: 35,
-        height: 35
+        height: 35,
+        resizeMode: 'contain',
     },
     ContainerNavCall: {
-        borderColor: '#fff',
-        borderWidth: 1,
+        borderTopColor: '#aaa',
+        borderTopWidth: 1,
+        borderBottomColor: '#aaa',
+        borderBottomWidth: 1,
         flexDirection: 'row',
         width: '100%',
         alignItems: 'center',
