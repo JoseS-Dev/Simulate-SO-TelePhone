@@ -80,9 +80,11 @@ export function KeyBoardCall() {
                         </View>
                     ):(
                         <View style={StylesCall.ContainerKeyCall}>
-                            <TouchableHighlight style={StylesCall.container_1}>
-                                <Image source={require('../assets/Phone/Phone.png')} style={StylesCall.ImageCall}/>
-                            </TouchableHighlight>
+                            <Link href={{pathname:'/CallPhone', params: {Phone: PhoneNumber}}} asChild>
+                                <TouchableHighlight style={StylesCall.container_1}>
+                                    <Image source={require('../assets/Phone/Phone.png')} style={StylesCall.ImageCall}/>
+                                </TouchableHighlight>
+                            </Link>
                             <TouchableHighlight style={StylesCall.container_1} onPress={() => buttonLimipar()}>
                                 <Image source={require('../assets/Phone/DeleteCall.png')} style={StylesCall.ImageCall}/>
                             </TouchableHighlight>
