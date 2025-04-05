@@ -1,4 +1,4 @@
-import { StyleSheet, TextInput } from "react-native";
+import { StyleSheet } from "react-native";
 export const StylesNotes = StyleSheet.create({
     Container: {
         flex: 1,
@@ -63,7 +63,7 @@ export const StylesNotes = StyleSheet.create({
         borderColor: '#fff',
         borderWidth: 1,
         width: '100%',
-        height: '8%',
+        height: 65,
         flexDirection: 'row',
         alignItems: 'center',
         padding: 3
@@ -103,20 +103,19 @@ export const StylesNotes = StyleSheet.create({
         resizeMode: 'cover'
     },
     Modal: {
-        width: '75%',
-        height: '65%',
+        flex: 1,
         backgroundColor: '#111',
-        position: 'absolute',
-        top: '17%',
-        left: '13%',
-        zIndex: 1,
+        justifyContent: 'center',
         padding: 5,
+        alignItems: 'center',
     },
     ModalContainer: {
         borderRadius: 30,
         width: '100%',
         height: '100%',
+        justifyContent: 'space-evenly',
         alignItems: 'center',
+        backgroundColor: '#222',
         gap: 25,
         boxShadow: '0px 0px 5px #ddaa',
     },
@@ -136,7 +135,7 @@ export const StylesNotes = StyleSheet.create({
         width: '100%',
         height: '25%',
         padding: 5,
-        justifyContent: 'space-between',
+        
         alignItems: 'center',
 
     },
@@ -153,7 +152,7 @@ export const StylesNotes = StyleSheet.create({
         borderRightColor: '#fff',
         borderRightWidth: 1,
         width: '100%',
-        height: '70%',
+        height: '40%',
         fontSize: 12,
         fontWeight: '500',
         color: '#eee',
@@ -174,7 +173,7 @@ export const StylesNotes = StyleSheet.create({
         borderRightColor: '#fff',
         borderRightWidth: 1,
         width: '100%',
-        height: '70%',
+        height: '50%',
         fontSize: 12,
         fontWeight: '500',
         color: '#eee',
@@ -185,7 +184,7 @@ export const StylesNotes = StyleSheet.create({
     ModalButton: {
         boxShadow: '0px 0px 10px #ddaa',
         width: '55%',
-        height: '10%',
+        height: '5%',
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#444',
