@@ -1,4 +1,4 @@
-import { Gallery } from "../Components/Gallery";
+import { Gmail } from '../Components/Gmail'
 export default function GalleryScreen() {
-    return <Gallery />;
+    return <Gmail />;
 }
