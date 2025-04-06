@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { Pressable, StyleSheet } from "react-native";
 export const StylesNotes = StyleSheet.create({
     Container: {
         flex: 1,
@@ -189,5 +189,62 @@ export const StylesNotes = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#444',
         borderRadius: 25,
+    }
+})
+
+export const StylesFormNotes = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#111',
+        alignItems: 'center',
+        padding: 5,
+    },
+    ContainerHeader: {
+        borderBottomColor: '#fff',
+        borderBottomWidth: 1,
+        borderRadius: 10,
+        width: '100%',
+        flexDirection: 'row',
+        height: '5%',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+    PressableNav: {
+        width: '10%',
+        height: '100%',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        paddingHorizontal: 15,
+    },
+    ImageHeader: {
+        width: 35,
+        height: 35,
+        resizeMode: 'cover'
+    },
+    ContainerTitle: {
+        width: '90%',
+        height: '100%',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    textTitle: {
+        textAlign: 'center',
+        color: '#eee',
+        fontSize: 16,
+        letterSpacing: 2,
+        fontWeight: '500',
+    },
+    ContainerMain: {
+        
+        width: '100%',
+        height: '95%',
+        padding: 10
+    },
+    textContent: {
+        fontSize: 16,
+        fontWeight: '500',
+        color: '#eee',
+        letterSpacing: 1,
+        textAlign: 'left',
     }
 })
