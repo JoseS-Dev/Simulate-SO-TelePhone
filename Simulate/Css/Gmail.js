@@ -71,6 +71,7 @@ export const StylesStructureGmail = StyleSheet.create({
         height: 85,
         width: '100%',
         flexDirection: 'row',
+        cursor: 'pointer',
     },
     ContainerContentGmail: {
         borderRightColor: '#fff',

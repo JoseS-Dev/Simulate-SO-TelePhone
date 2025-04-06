@@ -10,8 +10,8 @@ export function StructureGmail({Email, deleteEmail, FavoritesEmail}){
         setFavorite(!isFavorite)
     }
     return(
-        <Link href='/InfoGmail' asChild>
-            <View style={StylesStructureGmail.ContentGmail} key={Email.id}>
+        <Link href={{pathname: '/InfoGmail', params: {id: Email.id, Name: Email.Nmae, Date: Email.Date, Content: Email.Content, Email: Email.Email}}} asChild>
+            <Pressable style={StylesStructureGmail.ContentGmail} key={Email.id}>
                 <View style={StylesStructureGmail.ContainerContentGmail}>
                     <View style={StylesStructureGmail.AsuntGmail}>
                         <Text style={StylesStructureGmail.textTitle}>{Email.Name}</Text>
@@ -30,7 +30,7 @@ export function StructureGmail({Email, deleteEmail, FavoritesEmail}){
                 <Pressable style={StylesStructureGmail.PressableGmail} onPress={() => deleteEmail(Email.id)}>
                     <Image style={StylesStructureGmail.Image} source={require('../../assets/Delete.png')}/>
                 </Pressable>
-            </View>
+            </Pressable>
         </Link>
     )
 }
