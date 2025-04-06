@@ -43,7 +43,6 @@ export const StylesGmail = StyleSheet.create({
         alignItems: 'center',
     },
     PressableGmail: {
-        
         width: '30%',
         height: '100%',
         justifyContent: 'center',
@@ -66,7 +65,7 @@ export const StylesStructureGmail = StyleSheet.create({
     ContentGmail: {
         borderColor: '#fff',
         borderWidth: 1,
-        height: '30%',
+        height: 85,
         width: '100%',
         flexDirection: 'row',
     },
