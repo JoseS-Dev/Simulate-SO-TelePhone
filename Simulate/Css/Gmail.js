@@ -57,7 +57,10 @@ export const StylesGmail = StyleSheet.create({
     },
     textDecoration: {
         textDecorationLine: 'underline',
-        color: '#ddaa00'
+        color: '#ddaa00',
+        fontSize: 11,
+        fontWeight: '500',
+        letterSpacing: 2
     }
 })
 
