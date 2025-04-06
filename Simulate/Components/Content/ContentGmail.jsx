@@ -37,12 +37,13 @@ export function ContentGmail(){
             }
             try{
                 const storageEmail = await AsyncStorage.getItem('FavoritesGmail');
-                const FavoritesGmail = []
+                let FavoritesGmail = []
                 if(storageEmail){
                     FavoritesGmail = JSON.parse(storageEmail);
                 }
                 const isFavorite = FavoritesGmail.some(fav => fav.id === Favorite.id)
                 if(!isFavorite){
+                    FavoritesGmail.push(Favorite);
                     await AsyncStorage.setItem('FavoritesGmail', JSON.stringify(FavoritesGmail));
                     console.log('Correo agregado a favoritos');
                 }

@@ -17,7 +17,7 @@ export function BarraNavGmail(){
             </Link>
             <Link href='/Gmail' asChild>
                 <Pressable style={StylesGmail.PressableGmail} onPress={() => handlePress('Gmail')}>
-                    <Text style={[isSelected === 'Gmail' ? StylesGmail.textDecoration : [StylesGmail.PressabbleGmailText,StylesGmail.textDecoration]]}>Principal</Text>
+                    <Text style={[isSelected === 'Gmail' ? StylesGmail.textDecoration : [StylesGmail.PressabbleGmailText]]}>Principal</Text>
                 </Pressable>
             </Link>
             <Link href='/RecentGmail' asChild>
