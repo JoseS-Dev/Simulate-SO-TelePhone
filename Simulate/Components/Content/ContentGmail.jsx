@@ -15,7 +15,7 @@ export function ContentGmail(){
             setGmail(data);
         })
     }, []);
-    console.log(Gmail);
+    
 
     // Funcion para eliminar una correo
     const deleteEmail = (id) => {

@@ -10,11 +10,11 @@ export function StructureGmail({Email, deleteEmail, FavoritesEmail}){
         setFavorite(!isFavorite)
     }
     return(
-        <Link href={{pathname: '/InfoGmail', params: {id: Email.id, Name: Email.Nmae, Date: Email.Date, Content: Email.Content, Email: Email.Email}}} asChild>
+        <Link href={{pathname: '/InfoGmail', params: {id: Email.id, Name: Email.Name, Date: Email.Date, Content: Email.Content, Email: Email.Email}}} asChild>
             <Pressable style={StylesStructureGmail.ContentGmail} key={Email.id}>
                 <View style={StylesStructureGmail.ContainerContentGmail}>
                     <View style={StylesStructureGmail.AsuntGmail}>
-                        <Text style={StylesStructureGmail.textTitle}>{Email.Name}</Text>
+                        <Text style={StylesStructureGmail.textTitle} numberOfLines={1}>{Email.Name}</Text>
                         <Text style={StylesStructureGmail.textFecha}>{Email.Date}</Text>
                     </View>
                     <View style={StylesStructureGmail.ContainerTextContent}>

@@ -4,7 +4,7 @@ import { Link } from 'expo-router';
 
 export function StructureGmailFavorite({Email, deleteEmail}){
     return(
-        <Link href={{pathname: '/InfoGmail', params: {id: Email.id, Name: Email.Nmae, Date: Email.Date, Content: Email.Content, Email: Email.Email}}} asChild>
+        <Link href={{pathname: '/InfoGmail', params: {id: Email.id, Name: Email.Name, Date: Email.Date, Content: Email.Content, Email: Email.Email}}} asChild>
             <Pressable style={StylesStructureGmail.ContentGmail} key={Email.id}>
                 <View style={StylesStructureGmail.ContainerContentGmail}>
                     <View style={StylesStructureGmail.AsuntGmail}>
