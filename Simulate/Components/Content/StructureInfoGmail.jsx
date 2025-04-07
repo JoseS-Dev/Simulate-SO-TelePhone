@@ -1,4 +1,4 @@
-import {View, Text, Image, Pressable, TouchableHighlight, Modal, KeyboardAvoidingView, Platform, TextInput} from 'react-native';
+import {View, Text, Image, Pressable, TouchableHighlight, Modal, KeyboardAvoidingView, Platform, TextInput, FlatList} from 'react-native';
 import { Link } from 'expo-router';
 import { StylesGmailInfo } from '../../Css/Gmail';
 import { useGlobalSearchParams } from 'expo-router';
@@ -61,11 +61,14 @@ export function StructureInfoGmail(){
             </View>
             <View style={StylesGmailInfo.ContainerDetails}>
                 <Text style={StylesGmailInfo.textContent}>{Content}</Text>
-                {sentGmail.map((message, index) => (
-                    <View style={StylesGmailInfo.ContainerContentMessage} key={index}>
-                        <Text style={StylesGmailInfo.textMessage}>{message}</Text>
-                    </View>
-                ))}
+                <FlatList
+                    data={sentGmail}
+                    keyExtractor={(item, index) => index.toString()}
+                    renderItem={({item}) => (
+                        <View style={StylesGmailInfo.ContainerMessage}>
+                            <Text style={StylesGmailInfo.textMessage}>{item}</Text>
+                        </View>
+                )}/>
             </View>
             <TouchableHighlight style={StylesGmailInfo.ButtonResponse} onPress={() => setModalVisible(true)}>
                 <Text style={StylesGmailInfo.textButton}>Responder</Text>
