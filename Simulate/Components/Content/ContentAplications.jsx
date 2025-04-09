@@ -41,7 +41,7 @@ export function ContentAplication(){
                 <Link href="/Camera" asChild>
                     <Pressable style={StylesAplications.Pressable}>
                         <Image style={StylesAplications.ImageAplication} source={require('../../assets/Camera/Camera.png')}/>
-                        <Text style={StylesAplications.TextAplication}>Camara</Text>
+                        <Text style={StylesAplications.TextAplication}>Navegador</Text>
                     </Pressable>
                 </Link>
             </View>
